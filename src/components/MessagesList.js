@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Message from './Message';
 
 const Sidebar = ({ messages }) => (
   <section id="messages-list">
     <ul>
       {messages.map((message) => (
-        <p>
-          <i>{message.author}</i>: {message.message}
-        </p>
+        <Message key={message.id} {...message} />
       ))}
     </ul>
   </section>
