@@ -18,6 +18,7 @@ const AddMessage = (props) => {
         ref={(node) => {
           input = node;
         }}
+        placeholder="Type new message here..."
       />
     </section>
   );
