@@ -7,8 +7,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import reducers from './reducers';
+import { addUser } from './actions';
 
 const store = createStore(reducers);
+
+// Register ourselves as present in the chat
+store.dispatch(addUser('Me'));
 
 ReactDOM.render(
   <Provider store={store}>
