@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import { Sidebar } from './containers/Sidebar';
 
 function App() {
   return (
     <div id="container">
-      <aside id="sidebar">Users</aside>
+      <Sidebar />
       <section id="main">
         <section id="messages-list">Messages list</section>
         <section id="new-message">New message</section>
